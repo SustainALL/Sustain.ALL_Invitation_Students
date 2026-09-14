@@ -2,6 +2,11 @@
 // SUSTAIN.ALL — project data & interactivity (student site)
 // ============================================================
 
+// Paste the Google Apps Script "Web app" URL here (ends in /exec).
+// Until this is filled in, the form shows an error instead of
+// submitting anywhere. See the chat / README for setup steps.
+const GOOGLE_SCRIPT_URL = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+
 const STAGES = ["Concept", "Pre-Prototype", "Prototype", "Pre-Pilot", "Pilot"];
 
 // maps each cluster name to its category, for colour-coding tags/chips
@@ -150,28 +155,28 @@ const PROJECTS = [
 // ------------------------------------------------------------
 const EVENTS = [
   {
-    id: "Q&A",
-    date: "",
-    title: "",
-    description: "",
-    link: "",
-    linkLabel: ""
+    id: "kickoff-mixer",
+    date: "Mon, 13 Oct 2026",
+    title: "Semester Kickoff Mixer",
+    description: "Meet the current project teams, hear what's launching this semester, and find out how to get involved. Casual, with food and drinks.",
+    link: "https://forms.gle/REPLACE_ME",
+    linkLabel: "RSVP"
   },
   {
-    id: "",
-    date: "",
-    title: "",
-    description: "",
-    link: "",
-    linkLabel: ""
+    id: "hackathon",
+    date: "Fri–Sun, 7–9 Nov 2026",
+    title: "Sustainability Hackathon Weekend",
+    description: "A 48-hour sprint open to all students, no prior experience required. Form a team on the night or come with one already.",
+    link: "https://forms.gle/REPLACE_ME",
+    linkLabel: "Sign up"
   },
   {
-    id: "",
-    date: "",
-    title: "",
-    description: "",
-    link: "",
-    linkLabel: ""
+    id: "campus-walk",
+    date: "Thu, 27 Nov 2026",
+    title: "Campus Sustainability Walk & Talk",
+    description: "An informal guided walk around campus looking at ongoing sustainability initiatives, followed by coffee and open discussion.",
+    link: "https://forms.gle/REPLACE_ME",
+    linkLabel: "Join the walk"
   }
 ];
 
@@ -309,6 +314,46 @@ document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.getElementById("navToggle");
   navToggle.addEventListener("click", () => nav.classList.toggle("open"));
   nav.querySelectorAll(".nav-links a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
+
+  // "Join us" form — sends data to a Google Apps Script web app,
+  // which appends a row to a connected Google Sheet.
+  const joinForm = document.getElementById("joinForm");
+  const joinSuccess = document.getElementById("joinSuccess");
+  if(joinForm){
+    joinForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      // honeypot check — real users never fill this hidden field
+      if(joinForm.querySelector('[name="bot-field"]').value){
+        return;
+      }
+
+      if(!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.startsWith("PASTE_")){
+        alert("Form isn't connected yet — add your Google Apps Script URL to GOOGLE_SCRIPT_URL in script.js.");
+        return;
+      }
+
+      const submitBtn = joinForm.querySelector('button[type="submit"]');
+      const originalLabel = submitBtn.textContent;
+      submitBtn.textContent = "Sending…";
+      submitBtn.disabled = true;
+
+      try{
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors", // Apps Script web apps don't return CORS headers;
+                            // the request still lands and doPost() still runs.
+          body: new FormData(joinForm)
+        });
+        joinForm.style.display = "none";
+        joinSuccess.classList.add("show");
+      }catch(err){
+        alert("Something went wrong sending that — please try again in a moment.");
+        submitBtn.textContent = originalLabel;
+        submitBtn.disabled = false;
+      }
+    });
+  }
 });
 
 // ============================================================

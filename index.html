@@ -21,17 +21,18 @@
       <li><a href="#clusters">Clusters</a></li>
       <li><a href="#challenges">Project Portfolio</a></li>
       <li><a href="#events">Events</a></li>
+      <li><a href="#join">Join us</a></li>
     </ul>
     <div class="nav-cta">
       <div class="social-links">
-        <a href="https://www.instagram.com/sustain_all?stkn=c3Y5enR0aXc2YzF3&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+        <a href="https://www.instagram.com/REPLACE_ME" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
         </a>
-        <a href="https://www.linkedin.com/company/sustain-all/posts/?feedView=all" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+        <a href="https://www.linkedin.com/company/REPLACE_ME" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><line x1="7.5" y1="10.5" x2="7.5" y2="16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="7.5" cy="7.3" r="1" fill="currentColor"/><path d="M11.5 16.5V10.5M11.5 13c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5v3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
         </a>
       </div>
-      <a href="" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px; font-size:13px;">Join the course</a>
+      <a href="https://www.tu.berlin/COURSE_PORTAL_LINK" target="_blank" rel="noopener" class="btn btn-primary" style="padding:10px 20px; font-size:13px;">Join the course</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -184,23 +185,23 @@
       <div class="steps">
         <div class="step">
           <span class="num">01</span>
-          <h4>Registrtation</h4>
-          <p></p>
+          <h4>Apply & Enrol</h4>
+          <p>Join Sustain.ALL through the official study reform module on the university course portal — open to students across faculties.</p>
         </div>
         <div class="step">
           <span class="num">02</span>
-          <h4>Challenge Matching</h4>
-          <p></p>
+          <h4>Get Matched to a Challenge</h4>
+          <p>You're placed into an interdisciplinary team taking on a real challenge in one of our 11 innovation clusters.</p>
         </div>
         <div class="step">
           <span class="num">03</span>
-          <h4>Semester</h4>
-          <p></p>
+          <h4>Build All Semester</h4>
+          <p>Weekly coaching, direct contact with your real-world partner, and a structured path from research to a working concept or prototype.</p>
         </div>
         <div class="step">
           <span class="num">04</span>
-          <h4>Final Showcase</h4>
-          <p></p>
+          <h4>Present & Carry It Forward</h4>
+          <p>Showcase what you built at the end of the semester. Strong projects can continue into a pilot with a new team the next semester.</p>
         </div>
       </div>
     </div>
@@ -307,10 +308,59 @@
           <span class="eyebrow">Get involved</span>
           <h2>Upcoming events</h2>
         </div>
-        <p class="lede">Meetups, workshops and open sessions for further engagement</p>
+        <p class="lede">Meetups, workshops and open sessions for anyone curious about the hub — no enrolment required to come along.</p>
       </div>
 
       <div class="card-grid" id="eventGrid"><!-- cards injected by script.js --></div>
+    </div>
+  </section>
+
+  <!-- JOIN US -->
+  <section class="section section-dark" id="join">
+    <div class="wrap cta-wrap">
+      <div class="cta-copy">
+        <span class="eyebrow" style="color:#FF6FAE;">Stay connected</span>
+        <h2 style="margin-top:10px;">Tell us how you'd like to get involved</h2>
+        <p class="lede" style="margin-top:18px;">Whether you want to join a project team, come to an event, or just stay in the loop with what the hub is up to — leave your details and we'll point you in the right direction.</p>
+        <ul class="cta-list">
+          <li>Takes less than a minute — no commitment either way.</li>
+          <li>We'll only reach out about the thing you actually picked below.</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <form name="join-us" id="joinForm">
+          <p style="position:absolute; left:-9999px;" aria-hidden="true"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <input type="hidden" name="formType" value="join">
+
+          <div class="field">
+            <label for="joinName">Your name</label>
+            <input type="text" id="joinName" name="name" required placeholder="Alex Student">
+          </div>
+          <div class="field">
+            <label for="joinEmail">Email</label>
+            <input type="email" id="joinEmail" name="email" required placeholder="alex@campus.tu-berlin.de">
+          </div>
+          <div class="field">
+            <label>I'd like to get involved as a…</label>
+            <div class="radio-row">
+              <label class="radio-opt"><input type="radio" name="interest" value="Student" checked> Student — join a project team</label>
+              <label class="radio-opt"><input type="radio" name="interest" value="Event attendee"> Event attendee — keep me posted on events</label>
+              <label class="radio-opt"><input type="radio" name="interest" value="Community member"> Community member — just stay in the loop</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="joinNote">Anything else? (optional)</label>
+            <textarea id="joinNote" name="note" placeholder="A cluster you're curious about, a question, anything."></textarea>
+          </div>
+
+          <div class="form-foot">
+            <p class="form-note">We reply within a few days — usually sooner.</p>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+        <div class="form-success" id="joinSuccess">Thanks — we've got your details. Talk soon!</div>
+      </div>
     </div>
   </section>
 
@@ -334,10 +384,10 @@
       <span>Sustain.ALL Transformation Hub — Technische Universität Berlin — Fakultät V: Fachgebiet Digital Water Systems </span>
       <div class="footer-bottom-right">
         <div class="social-links social-links--footer">
-          <a href="https://www.instagram.com/sustain_all?stkn=c3Y5enR0aXc2YzF3&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <a href="https://www.instagram.com/REPLACE_ME" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
           </a>
-          <a href="https://www.linkedin.com/company/sustain-all/posts/?feedView=all" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <a href="https://www.linkedin.com/company/REPLACE_ME" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><line x1="7.5" y1="10.5" x2="7.5" y2="16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="7.5" cy="7.3" r="1" fill="currentColor"/><path d="M11.5 16.5V10.5M11.5 13c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5v3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           </a>
         </div>
