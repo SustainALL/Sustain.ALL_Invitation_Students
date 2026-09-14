@@ -150,28 +150,28 @@ const PROJECTS = [
 // ------------------------------------------------------------
 const EVENTS = [
   {
-    id: "kickoff-mixer",
-    date: "Mon, 13 Oct 2026",
-    title: "Semester Kickoff Mixer",
-    description: "Meet the current project teams, hear what's launching this semester, and find out how to get involved. Casual, with food and drinks.",
-    link: "https://forms.gle/REPLACE_ME",
-    linkLabel: "RSVP"
+    id: "Q&A",
+    date: "",
+    title: "",
+    description: "",
+    link: "",
+    linkLabel: ""
   },
   {
-    id: "hackathon",
-    date: "Fri–Sun, 7–9 Nov 2026",
-    title: "Sustainability Hackathon Weekend",
-    description: "A 48-hour sprint open to all students, no prior experience required. Form a team on the night or come with one already.",
-    link: "https://forms.gle/REPLACE_ME",
-    linkLabel: "Sign up"
+    id: "",
+    date: "",
+    title: "",
+    description: "",
+    link: "",
+    linkLabel: ""
   },
   {
-    id: "campus-walk",
-    date: "Thu, 27 Nov 2026",
-    title: "Campus Sustainability Walk & Talk",
-    description: "An informal guided walk around campus looking at ongoing sustainability initiatives, followed by coffee and open discussion.",
-    link: "https://forms.gle/REPLACE_ME",
-    linkLabel: "Join the walk"
+    id: "",
+    date: "",
+    title: "",
+    description: "",
+    link: "",
+    linkLabel: ""
   }
 ];
 
