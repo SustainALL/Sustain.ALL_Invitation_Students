@@ -334,31 +334,36 @@
 
           <div class="field">
             <label for="joinName">Your name</label>
-            <input type="text" id="joinName" name="name" required placeholder="Alex Student">
+            <input type="text" id="joinName" name="name" required placeholder="Max Mustermann">
           </div>
           <div class="field">
             <label for="joinEmail">Email</label>
-            <input type="email" id="joinEmail" name="email" required placeholder="alex@campus.tu-berlin.de">
+            <input type="email" id="joinEmail" name="email" required placeholder="maxmustermann@org.de">
           </div>
           <div class="field">
-            <label>I'd like to get involved as a…</label>
+            <label for="joinEmail">Institute</label>
+            <input type="email" id="joinInstitute" name="institute" required placeholder="TU Berlin- Faculty V">
+          </div>
+          <div class="field">
+            <label>I'd like to participate in the..</label>
             <div class="radio-row">
-              <label class="radio-opt"><input type="radio" name="interest" value="Student" checked> Student — join a project team</label>
-              <label class="radio-opt"><input type="radio" name="interest" value="Event attendee"> Event attendee — keep me posted on events</label>
-              <label class="radio-opt"><input type="radio" name="interest" value="Community member"> Community member — just stay in the loop</label>
+              <label class="radio-opt"><input type="radio" name="interest" value="Student" checked> Module - as a BUA student!</label>
+              <label class="radio-opt"><input type="radio" name="interest" value="Event attendee"> Events - Partake in community events!</label>
+              <label class="radio-opt"><input type="radio" name="interest" value="Community member"> Module & Events! </label>
+              <label class="radio-opt"><input type="radio" name="interest" value="Community member"> Community- Stay in the loop! </label>
             </div>
           </div>
           <div class="field">
-            <label for="joinNote">Anything else? (optional)</label>
-            <textarea id="joinNote" name="note" placeholder="A cluster you're curious about, a question, anything."></textarea>
+            <label for="joinNote">Additional Comments: (optional)</label>
+            <textarea id="joinNote" name="note" placeholder="It can be a doubt or something you want to inform us."></textarea>
           </div>
 
           <div class="form-foot">
-            <p class="form-note">We reply within a few days — usually sooner.</p>
+            <p class="form-note">We reply within 3 days, usually sooner :)</p>
             <button type="submit" class="btn btn-primary">Send</button>
           </div>
         </form>
-        <div class="form-success" id="joinSuccess">Thanks — we've got your details. Talk soon!</div>
+        <div class="form-success" id="joinSuccess">Thank you! We've added you to our mailing list.</div>
       </div>
     </div>
   </section>
