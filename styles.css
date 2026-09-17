@@ -202,19 +202,22 @@ h1,h2,h3,h4{
   text-transform: uppercase;
 }
 .hero h1 .hl{ color: var(--magenta); }
-.hero .lede{ margin-top: 22px; font-size: 20px; }
+.hero .lede{ margin-top: 22px; font-size: 20px; max-width: none; }
 .hero-actions{
   margin-top: 34px;
   display:flex;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
 }
 .hero-stats{
   margin-top: 46px;
   display:flex;
+  justify-content: center;
   gap: 34px;
   flex-wrap: wrap;
 }
+.hero-stat{ text-align: center; }
 .hero-stat b{
   display:block;
   font-family: var(--display);
