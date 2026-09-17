@@ -892,7 +892,7 @@ h1,h2,h3,h4{
   background: var(--white);
   border: 1.5px solid var(--line);
   padding: 10px 16px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   cursor:pointer;
 }
 .radio-opt input{ accent-color: var(--magenta); }
@@ -996,13 +996,27 @@ h1,h2,h3,h4{
   .hero-card-actions{ flex-direction: column; }
   .hero-card-actions .btn{ justify-content: center; }
 
-  /* hub timeline: single column, node + card stacked, spine on the left */
-  .timeline::before{ left: 28px; }
+  /* hub timeline: single column, node + card side by side, spine on the left */
+  .timeline::before{ left: 26px; }
   .timeline-item,
-  .timeline-item--right{ grid-template-columns: 56px 1fr; gap: 16px; }
+  .timeline-item--right{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
   .timeline-item--left .timeline-card,
-  .timeline-item--right .timeline-card{ grid-column: 2; text-align: left; }
-  .timeline-node{ grid-column: 1; width: 52px; height: 52px; }
+  .timeline-item--right .timeline-card{
+    order: 2;
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: left;
+  }
+  .timeline-node{
+    order: 1;
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+  }
   .timeline-spacer{ display: none; }
   .schedule-card{ flex-direction: column; align-items: stretch; text-align: left; }
   .schedule-card .btn{ justify-content: center; }
