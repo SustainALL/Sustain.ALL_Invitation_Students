@@ -155,28 +155,28 @@ const PROJECTS = [
 // ------------------------------------------------------------
 const EVENTS = [
   {
-    id: "kickoff-mixer",
-    date: "Mon, 13 Oct 2026",
-    title: "Semester Kickoff Mixer",
-    description: "Meet the current project teams, hear what's launching this semester, and find out how to get involved. Casual, with food and drinks.",
-    link: "https://forms.gle/REPLACE_ME",
-    linkLabel: "RSVP"
+    id: "TU Partner- Q&A",
+    date: "Monday, September 28",
+    title: "Partner Meeting",
+    description: "An open discussion between us and the challenge partners regarding their project progression and expectations.",
+    link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=0#gid=0",
+    linkLabel: "Sign Up"
   },
   {
-    id: "hackathon",
-    date: "Fri–Sun, 7–9 Nov 2026",
-    title: "Sustainability Hackathon Weekend",
-    description: "A 48-hour sprint open to all students, no prior experience required. Form a team on the night or come with one already.",
-    link: "https://forms.gle/REPLACE_ME",
-    linkLabel: "Sign up"
+    id: "Student- Q&A",
+    date: "Thursday, October 8",
+    title: "Student Q&A",
+    description: "A platform for students to clarify their doubts and convey any messages to us before the start of the semester.",
+    link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=775531010#gid=775531010",
+    linkLabel: "Sign Up"
   },
   {
-    id: "campus-walk",
-    date: "Thu, 27 Nov 2026",
-    title: "Campus Sustainability Walk & Talk",
-    description: "An informal guided walk around campus looking at ongoing sustainability initiatives, followed by coffee and open discussion.",
-    link: "https://forms.gle/REPLACE_ME",
-    linkLabel: "Join the walk"
+    id: "upcoming",
+    date: "Stay Tuned",
+    title: "Community Meeting",
+    description: "An informal meeting to discuss the latest developments in the Sustain.ALL community as well as engage the community.",
+    link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=675946585#gid=675946585",
+    linkLabel: "Sign Up"
   }
 ];
 
