@@ -157,18 +157,8 @@ const EVENTS = [
   {
     id: "Semester Beginning",
     date: "Wednesday, October 14, 14:15-17:45",
-    title: "Partner Meeting",
-    description: "An open discussion between us and the challenge partners regarding their project progression and expectations.",
-    link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=0#gid=0",
-    linkLabel: "Sign Up"
-  },
-  {
-    id: "Student- Q&A",
-    date: "Thursday, October 7, 13:30-14:15, Online",
-    title: "Student Q&A",
-    description: "A platform for students to clarify their doubts and convey any messages to us before the start of the semester.",
-    link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=775531010#gid=775531010",
-    linkLabel: "Sign Up"
+    title: "Semester Beginning",
+    description: "Join us as we kick-off the Winter Semester with an introductory lecture followed by a Q&A.",
   },
   {
     id: "upcoming",
