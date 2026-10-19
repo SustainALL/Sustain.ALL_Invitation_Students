@@ -155,10 +155,12 @@ const PROJECTS = [
 // ------------------------------------------------------------
 const EVENTS = [
   {
-    id: "Semester Beginning",
-    date: "Wednesday, October 14, 14:15-17:45",
-    title: "Semester Beginning",
-    description: "Join us as we kick-off the Winter Semester with an introductory lecture followed by a Q&A.",
+    id: "Climate Co-creation Lab",
+    date: "Wednesday, October 21, 11:00-12:30",
+    title: "Climate Co-creation Lab- Munich Climate Week",
+    description: "An interaction between students, researchers, industry and policymakers to explore challenges and co-create soltuions. Location: Online (Zoom)"
+    link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=1830914630#gid=1830914630",
+    linkLabel: "Sign Up",
   },
   {
     id: "upcoming",
