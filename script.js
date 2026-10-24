@@ -159,7 +159,7 @@ const EVENTS = [
     date: "Friday, October 30, 16:00-20:00",
     title: "Hackathon: Bodies in Digital Contexts",
     description: "The kick-off event serves as an opportunity for participants to get to know one another and provides an introduction to the topic of the body within digital contexts.Students, as well as faculty members and external partners, will present project ideas, research questions, datasets, or technological challenges.",
-    location: "ECDF, Wilhelmstraße 67, 10117 Berlin",
+    location: "Location: ECDF, Wilhelmstraße 67, 10117 Berlin",
     link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=1830914630#gid=1830914630",
     linkLabel: "Sign Up",
   },
