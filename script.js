@@ -181,6 +181,7 @@ function eventCardHTML(ev){
       </div>
       <h3>${ev.title}</h3>
       <p class="pcard-challenge">${ev.description}</p>
+      <p class="pcard-challenge">${ev.location}</p>
       <a class="pcard-more" href="${ev.link}" target="_blank" rel="noopener" style="margin-top:auto;">${ev.linkLabel} →</a>
     </article>`;
 }
