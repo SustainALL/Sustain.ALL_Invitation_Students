@@ -64,7 +64,7 @@ const PROJECTS = [
     development: "Mapped materials, brought external recycling companies to the table, and drafted a pilot proposal.",
     stage: 3, // Pre-Pilot
     further: "Clarifying internal budgets, running the pilot, and assessing recycled-material quality and economics.",
-    link: "resources/Sustain.Circularity_Textile.pdf",
+    link: "Sustain.Circularity_Textile.pdf",
     linkLabel: "View project deck"
   },
   {
@@ -90,7 +90,7 @@ const PROJECTS = [
     development: "Surveyed users to confirm demand, mapped stakeholders, analysed competitor navigation apps, and designed a static prototype.",
     stage: 1, // Pre-Prototype
     further: "Building a functional Figma prototype, securing data partnerships, and launching a pilot tied to a gamified mobility challenge.",
-    link: "resources/Sustain.MOBILITY.pdf",
+    link: "Sustain.MOBILITY.pdf",
     linkLabel: "View project deck"
   },
   {
@@ -104,10 +104,9 @@ const PROJECTS = [
     stage: 0, // Concept (& dashboard prototype)
     further: "Expanding smart-meter coverage, building an automated data pipeline, and piloting containerised local servers.",
     links: [
-      { href: "https://drive.google.com/file/d/1MWUYYiTqSbNV0n85_zbeOujzClAn2b61/view?usp=sharing", label: "View project files" },
-      { href: "https://claude.ai/code/artifact/2b0fee3b-88cc-4840-9821-864fc1080f05", label: "Open Claude artifact 1" },
-      { href: "https://claude.ai/code/artifact/8ce11341-2564-4c68-88dc-52ccd7834474", label: "Open Claude artifact 2" },
-      { href: "resources/Sustain.ENERGY_library.pdf", label: "View library deck (PDF)" }
+      { href: "https://claude.ai/code/artifact/2b0fee3b-88cc-4840-9821-864fc1080f05", label: "Open Energy Education Map" },
+      { href: "https://claude.ai/code/artifact/8ce11341-2564-4c68-88dc-52ccd7834474", label: "Open Monthly Energy Dashboard" },
+      { href: "resources/Sustain.ENERGY_library.pdf", label: "View project files for ZB Energy Reduction" }
     ]
   },
   {
@@ -120,7 +119,7 @@ const PROJECTS = [
     development: "Ran stakeholder mapping, completed a student barrier survey, and designed a static web interface.",
     stage: 1, // Pre-Prototype
     further: "Translating the static interface into a working platform prototype that directly addresses the barriers students named.",
-    link: "resources/Sustain.PARTX.pdf",
+    link: "Sustain.PARTX.pdf",
     linkLabel: "View project deck"
   },
   {
@@ -146,7 +145,7 @@ const PROJECTS = [
     development: "Ran site visits, surveyed student needs, researched best practice, and produced a circular design framework.",
     stage: 0, // Concept
     further: "Building modular furniture prototypes, hosting a student makeathon, and running a life-cycle-assessment comparison.",
-    link: "resources/Sustain.HUB.html",
+    link: "Sustain.HUB.html",
     linkLabel: "View project deck"
   }
 ];
