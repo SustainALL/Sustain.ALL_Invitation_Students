@@ -106,7 +106,7 @@ const PROJECTS = [
     links: [
       { href: "https://claude.ai/code/artifact/2b0fee3b-88cc-4840-9821-864fc1080f05", label: "Open Energy Education Map" },
       { href: "https://claude.ai/code/artifact/8ce11341-2564-4c68-88dc-52ccd7834474", label: "Open Monthly Energy Dashboard" },
-      { href: "resources/Sustain.ENERGY_library.pdf", label: "View project files for ZB Energy Reduction" }
+      { href: "Sustain.ENERGY_library.pdf", label: "View project files for ZB Energy Reduction" }
     ]
   },
   {
