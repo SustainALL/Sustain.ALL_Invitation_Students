@@ -28,18 +28,16 @@ function tagClassFor(cluster){
 }
 
 const PROJECTS = [
- 
-const projects = [
   {
     id: "impact",
     title: "Sustain.Impact",
     cluster: "AI, Data & Digital Sustainability",
     partner: "Dr. Kristina Fajga, Science & Startups",
-    challenge: "TU Berlin has an opportunity to make the environmental impact of campus projects more measurable, comparable, and visible across faculties.",
-    solution: "A public website that collects project data, uses AI to generate sustainability scores out of 100, and showcases results by faculty.",
-    development: "This semester, the team successfully developed the scoring logic, built the data pipeline, and launched a live webpage hosted on GitHub.",
+    challenge: "TU Berlin had no comparable, quantitative way to measure or show the environmental impact of campus projects.",
+    solution: "A website where project data is submitted, scored out of 100 by an AI engine, and displayed publicly under the relevant faculty.",
+    development: "This semester the team shipped the scoring logic, the data pipeline, and a live webpage hosted on GitHub.",
     stage: 2, // Prototype
-    further: "Enhancing fairness in AI scoring, incorporating feedback, and preparing a pilot program aligned with EU data-protection requirements.",
+    further: "Correcting AI model bias, folding in feedback, and preparing a pilot program under EU data-protection rules.",
     link: "https://i-tup.github.io/frontend/",
     linkLabel: "View live prototype"
   },
@@ -48,11 +46,11 @@ const projects = [
     title: "Sustain.Finance",
     cluster: "Sustainable Finance",
     partner: null,
-    challenge: "Student-led impact projects can benefit from faster, more accessible funding opportunities tailored to smaller amounts (€500–€2,500).",
-    solution: "A streamlined TU Impact Fund offering rolling micro-grants through a simple one-page application, making funding more accessible for student initiatives.",
-    development: "Designed a five-member allocation committee, developed a €15,000 pilot budget, and identified ESG-focused donor pipelines.",
+    challenge: "Small student-led impact projects often fail because existing funding applications are too slow and complex for micro-funding amounts (€500–€2,500).",
+    solution: "A fast, process-light TU Impact Fund offering rolling micro-grants based on a simple one-page application.",
+    development: "Designed a five-seat allocation committee, drafted a €15,000 pilot budget, and defined ESG donor pipelines.",
     stage: 3, // Pre-Pilot
-    further: "Establishing the donation directive, connecting with a foundation representative, and engaging prospective first donors.",
+    further: "Setting up the donation directive, naming a foundation contact, and opening talks with prospective first donors.",
     link: "https://drive.google.com/file/d/1ka_4O3YXpg0b6CQhG9QZ1MOVutRq1tVX/view?usp=sharing",
     linkLabel: "View project files"
   },
@@ -61,12 +59,12 @@ const projects = [
     title: "Sustain.Circularity — Textile",
     cluster: "Circular Economy",
     partner: "Anett Hein & Julia Krzyslak, Zentrale Beschaffung",
-    challenge: "Institutional textiles, including contaminated materials, offer opportunities to develop safe and coordinated pathways for material recovery.",
-    solution: "A structured routing framework that categorises used campus textiles and directs suitable materials toward safe downcycling and recycling pathways.",
-    development: "Mapped textile materials, established connections with external recycling companies, and developed a pilot proposal.",
+    challenge: "Contaminated institutional textiles had no centralised re-use or material recovery pathways.",
+    solution: "A routing framework to safely categorise and dispatch used campus textiles for downcycling and recycling instead of disposal.",
+    development: "Mapped materials, brought external recycling companies to the table, and drafted a pilot proposal.",
     stage: 3, // Pre-Pilot
-    further: "Aligning internal budgets, implementing the pilot, and evaluating recycled-material quality and economic feasibility.",
-    link: "https://docs.google.com/presentation/d/1nbzGQc3WowczfXzN0nqcEMnAVZIyF7PX/edit?usp=sharing",
+    further: "Clarifying internal budgets, running the pilot, and assessing recycled-material quality and economics.",
+    link: "resources/Sustain.Circularity_Textile.pdf",
     linkLabel: "View project deck"
   },
   {
@@ -74,11 +72,11 @@ const projects = [
     title: "Sustain.Circularity — IT",
     cluster: "Circular Economy",
     partner: null,
-    challenge: "Existing campus electronics offer valuable potential for extending device lifespans, reducing resource consumption, and improving procurement efficiency.",
-    solution: "An internal IT matchmaking platform that guides staff to request available refurbished TU hardware before purchasing new devices.",
-    development: "Identified key stakeholders and designed user-friendly website wireframes featuring practical hardware search filters.",
+    challenge: "Old electronics sit unused across the TU while new devices keep getting ordered — a linear waste of money and resources.",
+    solution: "An internal IT matchmaking site that requires staff to request refurbished TU hardware before ordering anything new.",
+    development: "Mapped the key stakeholders and designed website wireframes with user-friendly hardware filters.",
     stage: 0, // Concept
-    further: "Collaborating with the IT department on preliminary hardware inspections and integrating the platform into official university procurement and financing processes.",
+    further: "Adding preliminary hardware inspections with the IT department, and embedding the platform into official university financing routes.",
     link: "https://docs.google.com/presentation/d/17TS0B-vTxgyZk8tjge8UisuwYLZveDgJ/edit?usp=sharing",
     linkLabel: "View project deck"
   },
@@ -87,12 +85,12 @@ const projects = [
     title: "Sustain.Mobility",
     cluster: "Mobility & Smart Cities",
     partner: "Dr. Michael Hüllenkrämer, K4-Stabsstelle SDU & Gloria Karcher, Stabsstelle Nachhaltigkeit",
-    challenge: "Campus navigation presents an opportunity to enhance orientation, accessibility, and convenience through real-time, multilingual digital guidance.",
-    solution: "TUB-Navi, a centralised navigation app combining indoor and outdoor maps with live updates on accessible routes, bike parking, and EV charging.",
-    development: "Validated user interest through surveys, mapped stakeholders, analysed existing navigation apps, and designed a static prototype.",
+    challenge: "Outdated physical signage causes confusion on campus, with no real-time, multilingual or wheelchair-accessible routing.",
+    solution: "A centralised TUB-Navi app combining indoor and outdoor maps with live updates on accessibility, bike parking and EV charging.",
+    development: "Surveyed users to confirm demand, mapped stakeholders, analysed competitor navigation apps, and designed a static prototype.",
     stage: 1, // Pre-Prototype
-    further: "Developing a functional Figma prototype, establishing data partnerships, and preparing a pilot connected to a gamified mobility challenge.",
-    link: "https://docs.google.com/presentation/d/1Q2khaSVovK6SpqVj5Hpw782yMjK2jyj2/edit?usp=sharing",
+    further: "Building a functional Figma prototype, securing data partnerships, and launching a pilot tied to a gamified mobility challenge.",
+    link: "resources/Sustain.MOBILITY.pdf",
     linkLabel: "View project deck"
   },
   {
@@ -100,25 +98,29 @@ const projects = [
     title: "Sustain.Energy",
     cluster: "Climate & Energy",
     partner: "Bengisu Berispek, Sustain.ALL Transformation Hub",
-    challenge: "Greater visibility into campus energy use and room occupancy offers opportunities to optimise heating, lighting, and overall building efficiency.",
-    solution: "An energy-visualisation dashboard paired with an open-source IoT system that uses ceiling radar to align HVAC operation with actual room occupancy.",
-    development: "Created a monthly energy dashboard prototype for the library and mapped a zero-e-waste hardware integration matrix.",
+    challenge: "Campus energy use is invisible to the people in the building, and empty rooms are still heated and lit due to a spatial-utilisation gap.",
+    solution: "An energy-visualisation dashboard paired with an open-source IoT system that uses ceiling radar to match HVAC use to real attendance.",
+    development: "Built a monthly energy dashboard prototype for the library and mapped a zero-e-waste hardware integration matrix.",
     stage: 0, // Concept (& dashboard prototype)
-    further: "Expanding smart-meter coverage, developing an automated data pipeline, and piloting containerised local server infrastructure.",
-    link: "https://drive.google.com/file/d/1MWUYYiTqSbNV0n85_zbeOujzClAn2b61/view?usp=sharing",
-    linkLabel: "View project files"
+    further: "Expanding smart-meter coverage, building an automated data pipeline, and piloting containerised local servers.",
+    links: [
+      { href: "https://drive.google.com/file/d/1MWUYYiTqSbNV0n85_zbeOujzClAn2b61/view?usp=sharing", label: "View project files" },
+      { href: "https://claude.ai/code/artifact/2b0fee3b-88cc-4840-9821-864fc1080f05", label: "Open Claude artifact 1" },
+      { href: "https://claude.ai/code/artifact/8ce11341-2564-4c68-88dc-52ccd7834474", label: "Open Claude artifact 2" },
+      { href: "resources/Sustain.ENERGY_library.pdf", label: "View library deck (PDF)" }
+    ]
   },
   {
     id: "partx",
     title: "Sustain.PartX",
     cluster: "People, Society & Wellbeing",
     partner: "Bengisu Berispek, Sustain.ALL Transformation Hub",
-    challenge: "TU Berlin's diverse sustainability initiatives provide an opportunity to make participation more accessible, engaging, and rewarding for students.",
-    solution: "A gamified platform that brings together sustainability opportunities, simplifies participation, and motivates positive behavioural change through tangible rewards.",
-    development: "Mapped stakeholders, surveyed students to understand participation barriers, and designed a static web interface.",
+    challenge: "Plenty of eco-initiatives exist, but no centralised tool makes participating in them simple, rewarding or engaging.",
+    solution: "A gamified platform that aggregates green opportunities and offers easier access and tangible rewards to motivate behavioural change.",
+    development: "Ran stakeholder mapping, completed a student barrier survey, and designed a static web interface.",
     stage: 1, // Pre-Prototype
-    further: "Transforming the static interface into a functional platform that responds directly to student feedback and encourages broader participation.",
-    link: "https://docs.google.com/presentation/d/1FQZWyR3iE4tRxksJK1CLRpaK4_Pwx5jl/edit?usp=sharing",
+    further: "Translating the static interface into a working platform prototype that directly addresses the barriers students named.",
+    link: "resources/Sustain.PARTX.pdf",
     linkLabel: "View project deck"
   },
   {
@@ -126,11 +128,11 @@ const projects = [
     title: "Sustain.Food",
     cluster: "People, Society & Wellbeing",
     partner: null,
-    challenge: "With food systems contributing roughly 34% of global greenhouse-gas emissions, student meal choices present a meaningful opportunity to encourage more sustainable eating habits.",
-    solution: "EcoLens, a gamified mobile app that translates official food data into sustainability points and rewards eco-friendly cafeteria choices through interactive leaderboards.",
-    development: "Built a live interactive demo, developed the sustainability scoring logic, and completed a technical API and cost-feasibility analysis.",
+    challenge: "The food system drives roughly 34% of greenhouse-gas emissions, and shifting student meal choices needs real behavioural change.",
+    solution: "EcoLens — a gamified mobile app that turns official food data into sustainability points, rewarding eco-friendly cafeteria meals via leaderboards.",
+    development: "Built a live interactive demo, formulated the scoring logic, and ran a technical API and cost-feasibility analysis.",
     stage: 2, // Prototype
-    further: "Building data partnerships with Studierendenwerk, securing pilot funding, and preparing the app for deployment among students.",
+    further: "Securing data partnerships with Studierendenwerk, obtaining pilot funding, and deploying the app for student use.",
     link: "https://www.youtube.com/watch?app=desktop&v=VjhzTcMpEts&ra=m",
     linkLabel: "Watch video demo"
   },
@@ -139,15 +141,16 @@ const projects = [
     title: "Sustain.Hub",
     cluster: "Culture & Transformation",
     partner: "Dr. Michael Wilmes, Präsidialamt",
-    challenge: "Underused cafeteria spaces and existing furniture offer an opportunity to create flexible, resource-efficient environments for interdisciplinary student collaboration.",
-    solution: "Transforming former cafeteria spaces into circular co-creation hubs by repurposing existing furniture into flexible, modular systems.",
-    development: "Conducted site visits, surveyed student needs, researched best practices, and developed a circular design framework.",
+    challenge: "Unused cafeterias and large stores of spare furniture sit idle while students lack flexible, interdisciplinary collaboration space.",
+    solution: "Turning abandoned cafeterias into circular co-creation hubs by retrofitting existing furniture into modular systems.",
+    development: "Ran site visits, surveyed student needs, researched best practice, and produced a circular design framework.",
     stage: 0, // Concept
-    further: "Developing modular furniture prototypes, organising a student makeathon, and conducting a comparative life-cycle assessment.",
-    link: "https://docs.google.com/presentation/d/1KXeZOZTSBWGOFCtnigPAbYpxDoKr3Q0Q/edit?usp=sharing",
+    further: "Building modular furniture prototypes, hosting a student makeathon, and running a life-cycle-assessment comparison.",
+    link: "resources/Sustain.HUB.html",
     linkLabel: "View project deck"
   }
 ];
+
 // ------------------------------------------------------------
 // Community events — edit this list to add/remove events.
 // Each one just needs a date, title, short description, and a
@@ -156,11 +159,10 @@ const projects = [
 // ------------------------------------------------------------
 const EVENTS = [
   {
-    id: "Hackathon: Bodies in Digital Contexts",
-    date: "Friday, October 30, 16:00-20:00",
-    title: "Hackathon: Bodies in Digital Contexts",
-    description: "The kick-off event serves as an opportunity for participants to get to know one another and provides an introduction to the topic of the body within digital contexts.Students, as well as faculty members and external partners, will present project ideas, research questions, datasets, or technological challenges.",
-    location: "Location: ECDF, Wilhelmstraße 67, 10117 Berlin",
+    id: "Climate Co-creation Lab",
+    date: "Wednesday, October 21, 11:00-12:30",
+    title: "Climate Co-creation Lab- Munich Climate Week",
+    description: "An interaction between students, researchers, industry and policymakers to explore challenges and co-create soltuions. Location: Online (Zoom)",
     link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=1830914630#gid=1830914630",
     linkLabel: "Sign Up",
   },
@@ -182,7 +184,6 @@ function eventCardHTML(ev){
       </div>
       <h3>${ev.title}</h3>
       <p class="pcard-challenge">${ev.description}</p>
-      <p class="pcard-challenge">${ev.location}</p>
       <a class="pcard-more" href="${ev.link}" target="_blank" rel="noopener" style="margin-top:auto;">${ev.linkLabel} →</a>
     </article>`;
 }
@@ -212,6 +213,7 @@ function cardHTML(p){
 }
 
 function modalHTML(p){
+  const links = p.links ?? (p.link ? [{ href: p.link, label: p.linkLabel }] : []);
   return `
     <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
     <span class="tag ${tagClassFor(p.cluster)}">${p.cluster}</span>
@@ -234,7 +236,9 @@ function modalHTML(p){
       <h5>Next steps</h5>
       <p>${p.further}</p>
     </div>
-    ${p.link ? `<a class="modal-link" href="${p.link}" target="_blank" rel="noopener">${p.linkLabel} ↗</a>` : ""}
+    ${links.length ? `<div class="modal-links">${links.map(({ href, label }) =>
+      `<a class="modal-link" href="${href}" target="_blank" rel="noopener">${label} ↗</a>`
+    ).join("")}</div>` : ""}
   `;
 }
 
