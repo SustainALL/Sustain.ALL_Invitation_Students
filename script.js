@@ -65,7 +65,7 @@ const PROJECTS = [
     stage: 3, // Pre-Pilot
     further: "Clarifying internal budgets, running the pilot, and assessing recycled-material quality and economics.",
     link: "Sustain.Circularity_Textile.pdf",
-    linkLabel: "View project deck"
+    linkLabel: "View project report"
   },
   {
     id: "circularity-it",
@@ -91,7 +91,7 @@ const PROJECTS = [
     stage: 1, // Pre-Prototype
     further: "Building a functional Figma prototype, securing data partnerships, and launching a pilot tied to a gamified mobility challenge.",
     link: "Sustain.MOBILITY.pdf",
-    linkLabel: "View project deck"
+    linkLabel: "View project report"
   },
   {
     id: "energy",
@@ -106,7 +106,7 @@ const PROJECTS = [
     links: [
       { href: "https://claude.ai/code/artifact/2b0fee3b-88cc-4840-9821-864fc1080f05", label: "Open Energy Education Map" },
       { href: "https://claude.ai/code/artifact/8ce11341-2564-4c68-88dc-52ccd7834474", label: "Open Monthly Energy Dashboard" },
-      { href: "Sustain.ENERGY_library.pdf", label: "View project files for ZB Energy Reduction" }
+      { href: "Sustain.ENERGY_library.pdf", label: "View project report for ZB Energy Reduction" }
     ]
   },
   {
@@ -120,7 +120,7 @@ const PROJECTS = [
     stage: 1, // Pre-Prototype
     further: "Translating the static interface into a working platform prototype that directly addresses the barriers students named.",
     link: "Sustain.PARTX.pdf",
-    linkLabel: "View project deck"
+    linkLabel: "View project report"
   },
   {
     id: "food",
@@ -146,7 +146,7 @@ const PROJECTS = [
     stage: 0, // Concept
     further: "Building modular furniture prototypes, hosting a student makeathon, and running a life-cycle-assessment comparison.",
     link: "Sustain.HUB.html",
-    linkLabel: "View project deck"
+    linkLabel: "View project report"
   }
 ];
 
