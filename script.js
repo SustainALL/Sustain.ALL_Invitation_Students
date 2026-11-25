@@ -158,11 +158,11 @@ const PROJECTS = [
 // ------------------------------------------------------------
 const EVENTS = [
   {
-    id: "Climate Co-creation Lab",
-    date: "Wednesday, October 21, 11:00-12:30",
-    title: "Climate Co-creation Lab- Munich Climate Week",
-    description: "An interaction between students, researchers, industry and policymakers to explore challenges and co-create soltuions. Location: Online (Zoom)",
-    link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=1830914630#gid=1830914630",
+    id: "Hackathon",
+    date: "Friday-Sunday, December 11-13",
+    title: "Hackathon: Bodies in Digital Contexts",
+    description: "Join an interdisciplinary hackathon exploring how digital technologies shape our bodies, identities, and society. Students from seven Berlin universities collaborate to develop innovative technical, creative, and social solutions, addressing topics such as diversity, accessibility, gender equity, and data privacy.",
+    link: "https://docs.google.com/spreadsheets/d/1vNlJtw589dcxLDiG6c4MJilsvVbFYzLuaGRQbR-vJrg/edit?gid=0#gid=0",
     linkLabel: "Sign Up",
   },
   {
